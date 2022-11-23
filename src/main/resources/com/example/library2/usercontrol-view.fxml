@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.library2.UsercontrolController">
+   <children>
+      <AnchorPane prefHeight="76.0" prefWidth="600.0" style="-fx-background-color: #fcef91;" />
+      <AnchorPane prefHeight="400.0" prefWidth="600.0">
+         <children>
+            <TableView fx:id="usercontrolTable" layoutX="10.0" layoutY="99.0" prefHeight="275.0" prefWidth="578.0">
+              <columns>
+                <TableColumn fx:id="userid" prefWidth="51.19998264312744" text="User ID" />
+                  <TableColumn fx:id="username" prefWidth="70.99999618530273" text="User Name" />
+                  <TableColumn fx:id="userlastname" prefWidth="93.20001220703125" text="User Lastname" />
+                <TableColumn fx:id="title" prefWidth="73.80006408691406" text="Title" />
+                  <TableColumn fx:id="issuedate" prefWidth="73.5999755859375" text="Issue Date" />
+                  <TableColumn fx:id="isbn" minWidth="0.0" prefWidth="53.60003662109375" text="ISBN" />
+                  <TableColumn fx:id="edition" minWidth="8.5999755859375" prefWidth="82.20001220703125" text="Edition" />
+                  <TableColumn fx:id="loanid" prefWidth="76.99993896484375" text="Loan ID" />
+              </columns>
+            </TableView>
+            <Label fx:id="usercontrolLabel" alignment="CENTER" prefHeight="76.0" prefWidth="599.0" style="-fx-background-color: #fcef91;" text="User Control" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="43.0" />
+               </font></Label>
+            <Label fx:id="nameLabel2" alignment="CENTER" contentDisplay="CENTER" layoutX="449.0" layoutY="8.0" prefHeight="60.0" prefWidth="141.0" style="-fx-border-color: #ffffff;" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></Label>
+            <Button fx:id="logoutButton" mnemonicParsing="false" onAction="#logout" prefHeight="74.0" prefWidth="68.0" style="-fx-background-color: fcef91;" text="&lt;&lt;" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="23.0" />
+               </font></Button>
+            <Button fx:id="returnButton" layoutX="68.0" mnemonicParsing="false" onAction="#returning" prefHeight="74.0" prefWidth="68.0" style="-fx-background-color: fcef91;" text="&lt;" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="23.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

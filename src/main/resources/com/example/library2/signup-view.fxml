@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.library2.SignupController">
+   <children>
+      <TextField id="nametxt" fx:id="nametxt" layoutX="39.0" layoutY="100.0" prefHeight="26.0" prefWidth="524.0" promptText="Name" />
+      <TextField fx:id="lastnametxt" layoutX="40.0" layoutY="140.0" prefHeight="26.0" prefWidth="524.0" promptText="Last Name" />
+      <TextField fx:id="emailtxt" layoutX="40.0" layoutY="180.0" prefHeight="26.0" prefWidth="524.0" promptText="Email" />
+      <TextField fx:id="idtxt" layoutX="40.0" layoutY="220.0" prefHeight="26.0" prefWidth="524.0" promptText="ID" />
+      <PasswordField fx:id="passwordtxt" layoutX="40.0" layoutY="260.0" prefHeight="26.0" prefWidth="524.0" promptText="Password" />
+      <Label fx:id="correctsignupLabel" layoutX="40.0" layoutY="295.0" prefHeight="26.0" prefWidth="524.0" textFill="GREEN">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+      <Label fx:id="errorsignupLabel" layoutX="40.0" layoutY="295.0" prefHeight="26.0" prefWidth="524.0" textFill="RED">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Label>
+      <Button fx:id="signupButton" layoutX="40.0" layoutY="330.0" mnemonicParsing="false" onAction="#createacc" prefHeight="26.0" prefWidth="524.0" stylesheets="@hello.css" text="Enter" textFill="WHITE" />
+      <AnchorPane prefHeight="76.0" prefWidth="600.0" style="-fx-background-color: #000000;">
+         <children>
+            <Label fx:id="signupLabel" alignment="CENTER" contentDisplay="CENTER" prefHeight="77.0" prefWidth="600.0" text="Sign Up" textAlignment="CENTER" textFill="WHITE" textOverrun="CENTER_ELLIPSIS">
+               <font>
+                  <Font name="System Bold" size="43.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="SW_RESIZE" />
+               </cursor>
+            </Label>
+            <Button fx:id="returnButton" mnemonicParsing="false" onAction="#returning" prefHeight="76.0" prefWidth="71.0" stylesheets="@hello.css" text="&lt;&lt;" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="23.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

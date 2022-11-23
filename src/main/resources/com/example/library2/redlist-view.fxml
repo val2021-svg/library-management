@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.library2.RedlistController">
+   <children>
+      <AnchorPane prefHeight="76.0" prefWidth="600.0" style="-fx-background-color: #ff7779;" />
+      <AnchorPane prefHeight="400.0" prefWidth="600.0">
+         <children>
+            <TableView fx:id="redlistTable" layoutX="40.0" layoutY="96.0" prefHeight="275.0" prefWidth="521.0">
+              <columns>
+                <TableColumn fx:id="userid" prefWidth="75.0" text="User ID" />
+                  <TableColumn fx:id="username" prefWidth="210.79999542236328" text="User Name" />
+                  <TableColumn fx:id="userlastname" prefWidth="233.99990844726562" text="User Lastname" />
+              </columns>
+            </TableView>
+            <Label fx:id="redlistLabel" alignment="CENTER" prefHeight="76.0" prefWidth="599.0" style="-fx-background-color: #ff7779;" text="Red List" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="43.0" />
+               </font></Label>
+            <Label fx:id="nameLabel2" alignment="CENTER" contentDisplay="CENTER" layoutX="449.0" layoutY="8.0" prefHeight="60.0" prefWidth="141.0" style="-fx-border-color: #ffffff;" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></Label>
+            <Button fx:id="logoutButton" mnemonicParsing="false" onAction="#logout" prefHeight="74.0" prefWidth="68.0" style="-fx-background-color: ff7779;" text="&lt;&lt;" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="23.0" />
+               </font></Button>
+            <Button fx:id="returnButton" layoutX="68.0" mnemonicParsing="false" onAction="#returning" prefHeight="74.0" prefWidth="68.0" style="-fx-background-color: ff7779;" text="&lt;" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="23.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

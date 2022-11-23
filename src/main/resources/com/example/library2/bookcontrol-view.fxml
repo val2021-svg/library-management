@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.library2.BookcontrolController">
+   <children>
+      <AnchorPane prefHeight="76.0" prefWidth="600.0" style="-fx-background-color: #ca9bf7;" />
+      <AnchorPane prefHeight="400.0" prefWidth="600.0">
+         <children>
+            <TableView fx:id="bookcontrolTable" layoutX="10.0" layoutY="132.0" prefHeight="242.0" prefWidth="578.0">
+              <columns>
+                <TableColumn fx:id="title" prefWidth="43.19998264312744" text="Title" />
+                <TableColumn fx:id="author" prefWidth="54.999996185302734" text="Aut. N" />
+                  <TableColumn fx:id="authorlastname" prefWidth="60.79998779296875" text="Aut. LN" />
+                  <TableColumn fx:id="firstpub" prefWidth="69.79998779296875" text="First Pub." />
+                  <TableColumn fx:id="isbn" prefWidth="54.00001525878906" text="ISBN" />
+                  <TableColumn fx:id="keyword1" prefWidth="62.0" text="Kwd #1" />
+                  <TableColumn fx:id="keyword2" prefWidth="52.4000244140625" text="Kwd #2" />
+                  <TableColumn fx:id="keyword3" prefWidth="52.20001220703125" text="Kwd #3" />
+                  <TableColumn fx:id="keyword4" prefWidth="59.4000244140625" text="Kwd #4" />
+                  <TableColumn fx:id="keyword5" prefWidth="65.60001220703123" text=" Kwd #5" />
+              </columns>
+            </TableView>
+            <Label fx:id="bookcontrolLabel" alignment="CENTER" prefHeight="76.0" prefWidth="600.0" style="-fx-background-color: #ca9bf7;" text="Available Books" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="37.0" />
+               </font></Label>
+            <Label fx:id="nameLabel2" alignment="CENTER" contentDisplay="CENTER" layoutX="449.0" layoutY="8.0" prefHeight="60.0" prefWidth="141.0" style="-fx-border-color: #ffffff;" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></Label>
+            <Button fx:id="logoutButton" mnemonicParsing="false" onAction="#logout" prefHeight="74.0" prefWidth="68.0" style="-fx-background-color: ca9bf7;" text="&lt;&lt;" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="23.0" />
+               </font></Button>
+            <Button fx:id="returnButton" layoutX="68.0" mnemonicParsing="false" onAction="#returning" prefHeight="74.0" prefWidth="68.0" style="-fx-background-color: ca9bf7;" text="&lt;" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="23.0" />
+               </font>
+            </Button>
+            <TextField fx:id="searchbar" layoutX="10.0" layoutY="91.0" prefHeight="26.0" prefWidth="578.0" promptText="Write the book title, author, first publication, isbn or a keyword" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

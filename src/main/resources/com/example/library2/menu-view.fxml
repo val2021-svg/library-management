@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.library2.MenuController">
+   <children>
+      <BorderPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #dce6e5;" />
+      <Button fx:id="bookloanButton" layoutX="34.0" layoutY="130.0" mnemonicParsing="false" onAction="#bookloan" prefHeight="102.0" prefWidth="166.0" stylesheets="@loan.css" text="Book Loan">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="bookcontrolButton" layoutX="213.0" layoutY="130.0" mnemonicParsing="false" onAction="#bookcontrol" prefHeight="102.0" prefWidth="166.0" text="Available Books">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+         <stylesheets>
+            <URL value="@hello.css" />
+            <URL value="@available.css" />
+         </stylesheets>
+      </Button>
+      <Button fx:id="returnbookButton" layoutX="394.0" layoutY="130.0" mnemonicParsing="false" onAction="#returnbook" prefHeight="102.0" prefWidth="172.0" stylesheets="@return.css" text="Return Book">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="borrowedButton" layoutX="34.0" layoutY="244.0" mnemonicParsing="false" onAction="#borrowed" prefHeight="102.0" prefWidth="166.0" stylesheets="@borrowed.css" text="Borrowed Books" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="redlistButton" layoutX="214.0" layoutY="244.0" mnemonicParsing="false" onAction="#redlist" prefHeight="102.0" prefWidth="166.0" stylesheets="@redlist.css" text="Red List" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="usercontrolButton" layoutX="394.0" layoutY="244.0" mnemonicParsing="false" onAction="#usercontrol" prefHeight="102.0" prefWidth="172.0" stylesheets="@user.css" text="User Control" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <AnchorPane prefHeight="76.0" prefWidth="600.0" style="-fx-background-color: #000000;">
+         <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="76.0" prefWidth="600.0" text="Menu" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="43.0" />
+               </font></Label>
+            <Button fx:id="logoutButton" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#logout" prefHeight="74.0" prefWidth="68.0" stylesheets="@logout.css" text="&lt;&lt;">
+               <font>
+                  <Font name="System Bold" size="23.0" />
+               </font></Button>
+            <Label fx:id="nameLabel" alignment="CENTER" layoutX="449.0" layoutY="8.0" prefHeight="60.0" prefWidth="141.0" style="-fx-border-color: #ffffff;" text="Label" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
